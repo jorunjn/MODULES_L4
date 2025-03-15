@@ -1,0 +1,22 @@
+{
+    "name": "modules-l4",
+    "version": "1.0.0",
+    "description": "Лабораторная работа 4",
+    "main": "src/index.js",
+    "scripts": {
+      "use": "node src/use.js",
+      "start": "cross-env MODE=development nodemon src/index.js",
+      "build": "cross-env MODE=production node src/index.js",
+      "deploy": "cross-env MODE=domain node src/index.js"
+    },
+    "dependencies": {
+      "bcrypt": "^5.1.0",
+      "dotenv": "^16.0.0",
+      "nodemon": "^2.0.0",
+      "axios": "^1.3.5"
+    },
+    "devDependencies": {
+      "cross-env": "^7.0.3"
+    }
+  }
+  
